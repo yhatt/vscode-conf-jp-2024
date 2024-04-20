@@ -120,6 +120,11 @@ p {
   margin: 0 0 0.6rem;
 }
 
+img {
+  width: auto;
+  height: auto;
+}
+
 h1,
 h2,
 h3,
@@ -181,8 +186,8 @@ ol {
   }
 }
 
-> ul,
-> ol {
+section > ul,
+section > ol {
   margin-top: 0.8rem;
   margin-bottom: 0.8rem;
 }
@@ -317,5 +322,5 @@ img[title~='centered' i],
 section .centered {
   display: block;
   margin: 0.8rem auto;
-  width: fit-content;
+  width: auto;
 }
