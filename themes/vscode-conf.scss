@@ -241,11 +241,11 @@ pre {
 }
 
 section.light pre {
-  @import 'node_modules/highlight.js/styles/github.css';
+  @import 'pkg:highlight.js/styles/github';
 }
 
 section:not(.light) pre {
-  @import 'node_modules/highlight.js/styles/github-dark.css';
+  @import 'pkg:highlight.js/styles/github-dark';
 }
 
 table {

@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "author": "Yuki Hattori",
   "scripts": {
-    "theme:build": "sass themes:dist",
+    "theme:build": "sass themes:dist --pkg-importer=node",
     "theme:watch": "npm run theme:build -- -w",
     "marp:start": "marp -s .",
     "marp:build": "marp index.md -o public/index.html",
