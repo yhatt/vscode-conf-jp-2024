@@ -1,0 +1,7 @@
+{
+  "markdown.marp.enableHtml": true,
+  "markdown.marp.themes": ["./dist/vscode-conf.css"],
+  "markdown.copyFiles.destination": {
+    "*": "${documentWorkspaceFolder}/assets/${fileName}"
+  }
+}

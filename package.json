@@ -1,0 +1,22 @@
+{
+  "name": "vscode-conf-2024",
+  "version": "0.0.0",
+  "author": "Yuki Hattori",
+  "scripts": {
+    "theme:build": "sass themes:dist",
+    "theme:watch": "npm run theme:build -- -w",
+    "marp:start": "marp -s .",
+    "start": "concurrently -k \"npm:theme:watch\" \"npm:marp:start\""
+  },
+  "marp": {
+    "html": true,
+    "bespoke": {
+      "osc": false
+    }
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^3.4.0",
+    "concurrently": "^8.2.2",
+    "sass": "^1.75.0"
+  }
+}
