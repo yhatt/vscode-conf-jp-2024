@@ -6,7 +6,7 @@ Marp for VS Code 拡張機能開発の舞台裏
 
 ```
 npm install
-npm run theme:build
+npm run build
 ```
 
 ## サーバー起動

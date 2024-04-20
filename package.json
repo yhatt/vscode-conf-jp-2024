@@ -6,14 +6,12 @@
     "theme:build": "sass themes:dist",
     "theme:watch": "npm run theme:build -- -w",
     "marp:start": "marp -s .",
-    "marp:build": "marp index.md -o public/index.html --theme-set ./dist",
+    "marp:build": "marp index.md -o public/index.html",
     "marp:build:assets": "mkdir -p ./public && cp -r ./assets ./public/assets",
-    "marp:build:pdf": "marp index.md -o public/index.pdf --theme-set ./dist --allow-local-files",
-    "build": "npm run theme:build && npm run marp:build:assets && npm run marp:build && npm run marp:build:pdf",
+    "marp:build:pdf": "marp index.md -o public/index.pdf",
+    "marp:build:og": "marp index.md -o public/og.png",
+    "build": "npm run theme:build && npm run marp:build:assets && npm run marp:build:og && npm run marp:build && npm run marp:build:pdf",
     "start": "concurrently -k \"npm:theme:watch\" \"npm:marp:start\""
-  },
-  "marp": {
-    "html": true
   },
   "devDependencies": {
     "@marp-team/marp-cli": "^3.4.0",
